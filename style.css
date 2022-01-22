@@ -66,7 +66,7 @@ h1 {
 }
 
 /* ///////Create a button "Explorer nos restaurants"///// */
-.description a {
+.btn {
   margin: 2rem 2rem 3rem 2rem;
   padding: 0.5rem;
   display: flex;
@@ -79,11 +79,11 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
-.description a:hover {
+.btn:hover {
   background-image: linear-gradient(0deg, rgba(166, 114, 226, 0.9), rgba(247, 166, 224, 0.9));
-  box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
-/* //////////Create buttons from "Fonctionnement" Menu */
+/* //////////Create buttons from "Fonctionnement" Menu //////////////////// */
 
 .fonctionnement h2 {
   padding: 1rem;
@@ -121,7 +121,7 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   color: #8d8d8d;
 }
-/* //////////Animation hover for buttons */
+/* //////////Animation hover for buttons ///////////////////*/
 .fonctionnement a:hover {
   background-color: #f5edff;
 }
@@ -133,15 +133,14 @@ h1 {
   font-weight: bold;
   color: black;
 }
-
-/* //////Fabricate the Grid Container for the cards */
+/* //////Container for the cards ///////////// */
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #f6f6f6;
-  padding: 1rem;
+  /* padding: 1rem; */
   padding-bottom: 3rem;
 }
 
@@ -149,7 +148,7 @@ main h2 {
   padding: 2rem 0 1rem 0;
   align-self:flex-start;
 }
-/* //////Definition restaurants cards */
+/* //////Definition restaurants cards ///////////////////////// */
 .restaurant_card {
   width: 100%;
   height: 15rem;
@@ -176,9 +175,8 @@ main h2 {
   border-radius: 0.2rem;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
 }
-.restaurant_card img {
-  -o-object-fit: cover;
-     object-fit: cover;
+img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -202,7 +200,7 @@ main h2 {
   width: 100%;
   padding: 1rem;
 }
-/* /////////Heart filling Animation */
+/* /////////Heart filling Animation ///////////////////// */
 .container_heart {
   position: relative;
   display: flex;
@@ -248,7 +246,7 @@ input:checked ~ .fas {
   transition-duration: 0.5s;
   opacity: 1;
 }
-/* /////////////Footer with nav menu */
+/* /////////////Footer with nav menu//////////////////// */
 footer {
   background: #353535;
   color: white;
@@ -271,4 +269,34 @@ footer>nav a {
 footer> nav> a> i {
   padding: 0 0.5rem 0 0;
   font-size: smaller;
+}
+/* ///////////Menus Pages /////////////////////////*/
+.menu_picture{
+  width: 100%;
+  height: 10rem;
+  position:relative;
+}
+.menu_picture img {
+max-width: 100%;
+max-height: 100%;
+position: absolute;
+object-fit: cover;
+}
+.menu {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.menu_title {
+  font-family:'Shrikhand', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space:nowrap;
+  width: 100%;
+  padding-left: 1rem;
+  
+}
+.menu_title> .container_heart {
+  bottom: -0.5rem;
+  right: 4rem;
 }
