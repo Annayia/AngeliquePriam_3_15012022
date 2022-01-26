@@ -65,8 +65,9 @@ main img {
 .menu_title .fas{
     opacity: 0;
     transition-duration: 0.5s;
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA)); 
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }  
   .menu_title > div> i {
@@ -252,7 +253,7 @@ footer {
     font-size: smaller;
   }
   /* ////////Responsive Design */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
     body {
         max-width: none;
         font-size: 80%;
