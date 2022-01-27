@@ -120,6 +120,16 @@ body section:nth-child(6)> div{
   gap: 2rem;
   padding: 1rem;
 }
+body section:nth-child(6) span {
+  position: relative;
+  background-color: #99e2d0;
+  color: green;
+  right:-15rem;
+  bottom: 11rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 body section:nth-child(6)> div img{
   height: 12rem;
   width:100%;
@@ -222,10 +232,13 @@ footer> nav> a> i {
   position: fixed;
   background-color: #fff;
   z-index: 2;
-  animation: load .5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: both;
- }
+  animation: load 2s 1s both;
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) 1.5s both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
 @keyframes load {
   0% {
     opacity: 1;
@@ -248,7 +261,29 @@ footer> nav> a> i {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: pop ease 0.25s;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
   }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 
 .My {
   animation-delay: 0.5s;
@@ -314,5 +349,8 @@ footer> nav> a> i {
       width: 80rem;
       max-width: 100%;
       margin: auto;
+  }
+  body section:nth-child(6) span {
+    left: 2rem;
   }
 }
