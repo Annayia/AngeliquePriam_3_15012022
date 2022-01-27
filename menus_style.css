@@ -51,16 +51,17 @@ main img {
 .menu_title  h2{
     font-family: 'Shrikhand', 'cursive';
     align-self: flex-start;
-      
+    padding: 1rem 0 0 1rem;
+    font-size: 1.75rem;
 }
 .menu_title .container_heart {
     position: absolute;
     display: flex;
     z-index: 3;
     align-items: center;
-    top:0;
+    top:0.5rem;
     bottom: 0;
-    right: 3rem;
+    right: 3.25rem;
 }
 .menu_title .fas{
     opacity: 0;
@@ -85,7 +86,7 @@ main img {
     z-index: 3;
   }
   .menu_title .fa-heart{
-  font-size: 2rem;
+  font-size: 1.75rem;
   
   }
   .menu_title input:checked ~ .far {
@@ -100,7 +101,7 @@ main img {
     padding-bottom: 2rem;
     margin-top: -2rem;
     background-color: #f6f6f6;
-    border-radius: 2rem;
+    border-radius: 2.5rem;
     z-index: 2;
     position: relative;
 }
@@ -119,6 +120,8 @@ main img {
     text-transform: uppercase;
     border-bottom:3px solid #99e2d0;
     width: 2rem;
+    font-size: medium;
+    padding: 0.5rem 0;
 }
 .course_dishes {
     display: flex;
@@ -129,6 +132,10 @@ main img {
     text-overflow: ellipsis;
     text-align: center;
     padding-left: 0.5rem;
+    background-color: white;
+}
+.course_dishes p {
+    font-weight: 300;
 }
 .menu_course, .menu_course p, h4,.dishes_description, .course_dishes {
     white-space: nowrap;
@@ -207,16 +214,22 @@ main img {
 }
   /* //////////Animation appearance dishes with delay//// */
   .container_grid > .menu_course:nth-child(1) {
-    animation: apparition 0.75s;
+    animation: apparition 1s;
     transition: ease-in 0.5s;
+    animation-fill-mode: both;
 }
 .container_grid > .menu_course:nth-child(2) {
     animation: apparition 1s;
     transition: ease-in 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
 }
 .container_grid > .menu_course:nth-child(3) {
-    animation: apparition 1.25s;
+    animation: apparition 1s;
     transition: ease-in 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    
 }
 
 @keyframes apparition {
@@ -265,7 +278,7 @@ footer {
     }
     .menu_course {
         display: unset;
-        margin: 0.5rem 0;
+        margin: 0.5rem 1rem;
     }
     .menu_course h3 {
         height: fit-content;
