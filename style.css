@@ -122,7 +122,7 @@ body section:nth-child(6) span {
   position: relative;
   background-color: #99e2d0;
   color: green;
-  right:-15.25rem;
+  right:-14.5rem;
   bottom: 11rem;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -353,5 +353,11 @@ footer> nav> a> i {
   }
   body section:nth-child(6) span {
     left: 2rem;
+    right: 0;
+  }
+}
+@media screen and (min-width: 400px) and (max-width:768px) {
+  body section:nth-child(6) span {
+    left: 0.5rem;
   }
 }
