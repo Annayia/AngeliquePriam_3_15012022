@@ -140,7 +140,7 @@ body section:nth-child(6)> div img{
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
-body section:nth-child(6)> div a {
+body section:nth-child(6)> div .restaurant{
   border-radius: 1rem;
   background-color: white;
   box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
@@ -148,7 +148,7 @@ body section:nth-child(6)> div a {
 body section:nth-child(6)> div p, body section:nth-child(6)> div h3{
   margin: 0.45rem;
 }
-body section:nth-child(6) a> div {
+body section:nth-child(6) .restaurant> div {
   position:relative;
   display: flex;
   align-items:center;
@@ -160,7 +160,8 @@ body section:nth-child(6) .content{
   position: absolute;
   display: flex;
   z-index: 1;
-  right: 3rem;
+  right: 3.5rem;
+  bottom: 2.5rem;
   align-items: center;
 } 
 body > section:nth-child(6) .fas{
