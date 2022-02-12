@@ -53,6 +53,7 @@ main img {
     padding: 1rem 0 0 1rem;
     font-size: 1.75rem;
 }
+/******************* Heart Animation********************** */
 .menu_title .container_heart {
     position: absolute;
     display: flex;
@@ -96,6 +97,7 @@ main img {
   transition-duration: 0.5s;
   opacity: 1;
   }
+  /*********** End Heart Animation ***********/
 .menu {
     padding-bottom: 2rem;
     margin-top: -2rem;
@@ -162,6 +164,7 @@ main img {
     padding: 0 0.5rem 0.9rem 0;
     margin-right: 0.25rem;
 }
+/************* checked Course Animation **************/
 .checked>i {
     color:#99e2d0;
     border-radius: 50%;
@@ -195,6 +198,7 @@ main img {
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
+/* *****************Button creation*********** */
 .btn {
   display:block;
   padding: 1rem 2rem;
@@ -264,7 +268,7 @@ footer {
     padding-right: 0.5rem;
     font-size: smaller;
   }
-  /* ////////Responsive Design */
+  /***********Responsive Design **************/
 @media screen and (min-width: 769px) and (max-width: 1920px) {
     body {
         max-width: 100%;
